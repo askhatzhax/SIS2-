@@ -11,9 +11,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Comments.Services\Comments.Services.csproj" />
     <ProjectReference Include="..\FGames.Services\FGames.Services.csproj" />
     <ProjectReference Include="..\SIS.Models\SIS.Models.csproj" />
     <ProjectReference Include="..\SIS.Service\SIS.Services.csproj" />
+    <ProjectReference Include="..\SIS2.Models\Comments.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Users\" />
   </ItemGroup>
 
 </Project>

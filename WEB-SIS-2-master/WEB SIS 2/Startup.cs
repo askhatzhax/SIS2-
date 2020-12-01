@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SIS.Models;
+using Comments.Models;
+using Comments.Services;
 using SIS.Services;
 using FGames.Services;
 namespace WEB_SIS_2
@@ -27,6 +29,7 @@ namespace WEB_SIS_2
         {
             services.AddSingleton<IEmployeeRepository,MockEmployeeRepository>();
             services.AddSingleton<IEmployee2Repository, MockEmployee2Repository>();
+            services.AddSingleton<ICommentRepository ,MockCommentRepository>();
             services.AddRazorPages();
         }
 
