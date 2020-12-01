@@ -1,0 +1,30 @@
+﻿@page
+@model WEB_SIS_2.Pages.Employees2.Employees2Model
+@{
+    ViewData["Title"] = "Free Games";
+}
+<h1>FREE GAMES </h1>
+<div class="row">
+    @foreach(var item in Model.Employees2)
+    {
+        //put k photo
+        var photoPath = $"/images2/{item.PhotoPath ?? "10.jpg"}";
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-deck">
+                <div class="card m-3 @*cardBoxShadow*@">
+                    <div class="card-header text-center @*cardHeaderStyle*@">
+                        <h3>@item.Name</h3>
+                    </div>
+
+                    <div class="text-center @*cardBodyStyle*@">
+                        <img class="card-img-top @*imageThumbnail2*@" src="@photoPath" asp-append-version="true" />
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a asp-page="/Employees2/Details2" asp-route-ID="@item.Id" class="btn btn-success m-1 buttonShadow">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+</div>

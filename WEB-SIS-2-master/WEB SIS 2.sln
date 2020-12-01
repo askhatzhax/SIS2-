@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB SIS 2", "WEB SIS 2\WEB SIS 2.csproj", "{D132B7BF-745D-454E-836D-F659C0012124}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D74354BA-CD43-4EFB-9948-7572D8F2E9F0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.Models", "SIS.Models\SIS.Models.csproj", "{6B88D8B4-3A3B-40DA-87C7-4B309DBB7323}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.Services", "SIS.Service\SIS.Services.csproj", "{FEABFA06-4B2C-47E7-93C6-8B15DAB4BBC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{D138551A-B5F9-46BD-A12C-668A3636AB65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGames.Services", "FGames.Services\FGames.Services.csproj", "{8DC7EA4D-F3C9-40F9-9844-7682F8BBF702}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS2.Models", "SIS2.Models\SIS2.Models.csproj", "{363F35D7-E1BC-4EB4-955B-658010F94B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D132B7BF-745D-454E-836D-F659C0012124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D132B7BF-745D-454E-836D-F659C0012124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D132B7BF-745D-454E-836D-F659C0012124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D132B7BF-745D-454E-836D-F659C0012124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B88D8B4-3A3B-40DA-87C7-4B309DBB7323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B88D8B4-3A3B-40DA-87C7-4B309DBB7323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B88D8B4-3A3B-40DA-87C7-4B309DBB7323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B88D8B4-3A3B-40DA-87C7-4B309DBB7323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEABFA06-4B2C-47E7-93C6-8B15DAB4BBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEABFA06-4B2C-47E7-93C6-8B15DAB4BBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEABFA06-4B2C-47E7-93C6-8B15DAB4BBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEABFA06-4B2C-47E7-93C6-8B15DAB4BBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC7EA4D-F3C9-40F9-9844-7682F8BBF702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC7EA4D-F3C9-40F9-9844-7682F8BBF702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC7EA4D-F3C9-40F9-9844-7682F8BBF702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC7EA4D-F3C9-40F9-9844-7682F8BBF702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363F35D7-E1BC-4EB4-955B-658010F94B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363F35D7-E1BC-4EB4-955B-658010F94B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363F35D7-E1BC-4EB4-955B-658010F94B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363F35D7-E1BC-4EB4-955B-658010F94B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F6DE89C-F805-4372-ADB9-22DD8AA94785}
+	EndGlobalSection
+EndGlobal
