@@ -1,15 +1,35 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "HOME PAGE";
-}
+@{ ViewData["Title"] = "HOME PAGE"; }
 
-<div class="text-center text-white">
-    <h1 class="display-4">@Model.Message</h1>
-    <p>Learn about <a href="https://github.com/askhatzhax/Web-SIS2.git"> My GitHub</a>.</p>
+<div class="index-text">
+    <h1>Welcome to "God games"</h1>
 </div>
-<div class="text-center text-white">
-    <div class="col">
-        <img src="/images2/Banner.jpg" class="" />
+<div class="center home">
+    <div id="slider">
+        <div id="strip">
+            <img src="/images/im0.jpg" alt="" />
+            <img src="/images/im1.jpg" alt="" />
+            <img src="/images/im2.jpg" alt="" />
+            <img src="/images/im3.jpg" alt="" />
+            <img src="/images/im4.jpg" alt="" />
+            <img src="/images/im5.jpg" alt="" />
+            <img src="/images/im6.jpg" alt="" />
+            <img src="/images/im7.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="knopka_destination">
+        <button class="knopka" id="slider-next">Next</button>
+
+    </div>
+    <hr />
+
+    <h3>Отзывы:</h3>
+    @{ string[] games = { "Андрей Кульянов: Мне очень понравилась игра NFC Undeground2", "Асхат Жакс : Конечно, сайт сыроват, много багов, фризов, но в целом мне сайт очень нравиться,здесь очень большой выбор бесплатных игр", "Дильназ :  Тут многоо вирусов. Хорошо подумайте перед тем как что-то устанавливать себе на комп." }; }
+    <div class="alert-secondary m-4" style="background-image:url(/wwwroot/Users/fon.jpeg) ">
+        @Html.CreateList(games, "square")
+    <hr />
     </div>
 </div>
+

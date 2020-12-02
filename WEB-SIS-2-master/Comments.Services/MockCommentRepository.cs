@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Comments.Models;
 
@@ -7,10 +8,10 @@ namespace Comments.Services
 {
     public class MockCommentRepository : ICommentRepository
     {
-        private List<Comment> _commentsList;
+        private List<Comment> _commentList;
         public MockCommentRepository()
         {
-            _commentsList = new List<Comment>()
+            _commentList = new List<Comment>()
             {
                 new Comment()
                 {
@@ -27,10 +28,26 @@ namespace Comments.Services
             };
 
         }
+
+        public Comment Add(Comment newComment)
+        {
+            newComment.Id = _commentList.Max(x => x.Id) + 1;
+            _commentList.Add(newComment);
+            return newComment;
+        }
+
         public IEnumerable<Comment> GetAllComments()
         {
-            return _commentsList;
+            return _commentList;
 
         }
+
+        public Comment GetComment(int id)
+        {
+            return _commentList.FirstOrDefault(x => x.Id == id);
+
+        }
+
+
     }
 }

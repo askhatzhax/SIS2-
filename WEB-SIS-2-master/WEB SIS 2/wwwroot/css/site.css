@@ -77,15 +77,21 @@ body {
 }
 
 
-body {
+body { 
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: black;
+    color: white;
     text-align: left;
     background-color: #000000;
     margin-bottom: 100px;
+}
+
+.home {
+    background-image: url('../images2/Banner.jpg');
+    width:100%;
+    height:100%;
 }
 
 .img-logo {
@@ -121,6 +127,70 @@ body {
     padding-top: 85px;
 }
 
+.reg-tex{
+    color: white;
+}
+.card-color {
+    color: black;
+}
+/*Слайдер*/
+.slider_text {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 50px;
+}
 
+#slider {
+    width: 630px;
+    height: 353px;
+    border: 5px solid whitesmoke;
+    margin: 25px auto;
+    overflow: hidden;
+}
 
+#strip {
+    width: 5400px;
+    position: relative;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+    #strip img {
+        float: left;
+        position: relative;
+    }
+
+    #strip::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+.knopka_destination {
+    text-align: center;
+}
+
+.knopka {
+    width: 100px;
+    height: 50px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    background-color: black;
+    color: whitesmoke;
+    transition-duration: 0.2s;
+    border-color: currentColor;
+}
+
+.index-text{
+    font-size: 70px;
+    text-align: center;
+}
 

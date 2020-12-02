@@ -1,0 +1,41 @@
+﻿@page "{id}"
+@model WEB_SIS_2.Pages.Comments.ViewsModel
+@{
+    ViewData["Title"] = "Views";
+    var photoPath = $"/Users/{Model.Comment.PhotoPath ?? "user.jpg" }";
+}
+<div class="row" justify-content-center m-3>
+    <div class="col col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h1 >@Model.Comment.Name</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <div class="row">
+                    <div class="col-10 col-lg-9">
+                        <h4 class="cardTextLeftFloating"> ID : @Model.Comment.Id </h4> <hr />
+                        <h4 class="cardTextLeftFloating"> Date : @Model.Comment.Date </h4> <hr />
+                        <h4 class="cardTextLeftFloating"> Game : @Model.Comment.GamesVariants </h4> <hr />
+                    </div>
+                    
+                    <div class="col col-lg-3">
+                        <div style="border-right:2px solid rgba(0,0,0,.1); ">
+                            <img class="card-img-top border border-dark" style="background-color:#ff6a00 ;" src="@photoPath" asp-append-version="true"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card-footer text-center" style="background-color:burlywood">
+                            <a asp-page="Comments" class="btn btn-warning" m-1>return</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+</div>

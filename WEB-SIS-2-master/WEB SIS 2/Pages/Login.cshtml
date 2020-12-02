@@ -1,0 +1,24 @@
+﻿@page
+@model WEB_SIS_2.Pages.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1 class="text-white">Login</h1>
+
+<form method="post">
+    <div><label class="control-label">Login: <input type="text" class="form-control" maxlength="25" name="login" /><br /></label></div>
+    <div><label class="control-label">Password: <input type="password" class="form-control" id="password-input" maxlength="25" placeholder="enter password" name="password" /><br /></label></div>
+    <input type="submit" value="Login" class="btn btn-light" />
+</form>
+
+@if (Model.User != null)
+    @Model.User.Login
+<br />
+@if (Model.User != null)
+    @Model.User.Password
+
+<div>
+    <a asp-page="Index">Go to Home Page</a>
+</div>

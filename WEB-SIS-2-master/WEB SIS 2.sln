@@ -14,13 +14,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.Models", "SIS.Models\SI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.Services", "SIS.Service\SIS.Services.csproj", "{FEABFA06-4B2C-47E7-93C6-8B15DAB4BBC3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{D138551A-B5F9-46BD-A12C-668A3636AB65}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGames.Services", "FGames.Services\FGames.Services.csproj", "{8DC7EA4D-F3C9-40F9-9844-7682F8BBF702}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comments.Models", "SIS2.Models\Comments.Models.csproj", "{363F35D7-E1BC-4EB4-955B-658010F94B83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments.Services", "Comments.Services\Comments.Services.csproj", "{E531743D-F75E-4D91-8917-66124A1DA134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comments.Services", "Comments.Services\Comments.Services.csproj", "{E531743D-F75E-4D91-8917-66124A1DA134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

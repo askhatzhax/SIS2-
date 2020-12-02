@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
@@ -21,4 +23,10 @@ namespace WEB_SIS_2.Pages
         {
         }
     }
+  
+        //public static HtmlString LoginForm(this IHtmlHelper html,string method)
+        //{
+
+        //}
+    
 }

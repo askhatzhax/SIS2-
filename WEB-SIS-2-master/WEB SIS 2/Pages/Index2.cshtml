@@ -1,0 +1,37 @@
+﻿@page
+@model WEB_SIS_2.Pages.Index2Model
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>You can leave a review here</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table reg-tex">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].Reviews)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Review)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Reviews)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
